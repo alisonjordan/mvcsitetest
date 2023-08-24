@@ -5,7 +5,7 @@ Class Config{
 	//Basic info about the site
 	const SITE_URL = "http://localhost";
 	const SITE_FOLDER = "testesitemvc";
-	const SITE_NAME = "Teste MVC";
+	const SITE_NAME = "Test MVC";
 	const SITE_EMAIL_ADM = "admin@gmail.com";
 
 
@@ -13,7 +13,7 @@ Class Config{
 	const BD_HOST = "localhost",
 		  BD_USER = "root",
 		  BD_PASSWORD = "",
-		  BD_BANCO = "testemvc",
+		  BD_BANCO = "testmvc",
 		  BD_PREFIX = "";
 
 
