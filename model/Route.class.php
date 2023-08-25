@@ -3,6 +3,14 @@ Class Route{
 
     public static $urls;
 
+    static function get_SiteHome(){
+        return Config::SITE_URL . '/' . Config::SITE_FOLDER;
+    }
+
+    static function get_SiteRoot(){
+        return $_SERVER['DOCUMENT_ROOT'] . '/' . Config::SITE_FOLDER;
+    }
+
     static function get_Page(){
         if(isset($_GET['page'])){
 
