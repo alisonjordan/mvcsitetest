@@ -10,6 +10,7 @@ Route::get_Page();
 
 $smarty->assign('NAME','Alison Jordan');
 
+
 $smarty->display('index.tpl');
 
 ?>
