@@ -14,7 +14,7 @@ Class Route{
     }
 
     static function get_SiteTheme(){
-        return self::get_SiteHome() . '/' . self::$folder_view;
+        return self::get_SiteHome() . '/' . self::$folder_view . '/theme';
     }
 
     static function page_Clients(){
