@@ -18,7 +18,11 @@ Class Route{
     }
 
     static function page_Clients(){
-        return self::get_SiteHome() . '/clients' . self::$folder_view;
+        return self::get_SiteHome() . '/clients';
+    }
+
+    static function page_About(){
+        return self::get_SiteHome() . '/about';
     }
 
     static function get_Page(){

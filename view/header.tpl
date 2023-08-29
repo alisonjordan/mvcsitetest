@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Heroic Features - Start Bootstrap Template</title>
+        <title>{$GET_SITE_NAME}</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{$GET_THEME}/assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -17,14 +17,15 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-lg-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" target="_blank" href="https://getbootstrap.com/">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_HOME}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_PAGE_CLIENTS}">Clients</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{$GET_PAGE_ABOUT}">About</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <p>

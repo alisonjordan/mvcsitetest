@@ -10,11 +10,11 @@ Class Config{
 
 
 	//Database info
-	const BD_HOST = "localhost",
-		  BD_USER = "root",
-		  BD_PASSWORD = "",
-		  BD_BANCO = "testmvc",
-		  BD_PREFIX = "";
+	const DB_HOST = "localhost",
+		  DB_USER = "root",
+		  DB_PASSWORD = "",
+		  DB_NAME = "mvctest",
+		  DB_PREFIX = "";
 
 
 	//PHP Mailer info
