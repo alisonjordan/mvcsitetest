@@ -15,6 +15,20 @@ Class Client extends Database{
 
     }
 
+    function GetClientsID($id){
+		
+		$query = "SELECT * FROM {$this->prefix}clients";
+
+		$query .= " WHERE cli_id = :id";
+
+		$params = array(':id'=>(int)$id);
+
+		$this->ExecuteSQL($query, $params);
+
+		$this->GetFetch();
+		
+	}
+
     private function GetFetch(){
 
         $i = 1;
@@ -23,7 +37,13 @@ Class Client extends Database{
             'cli_id' => $fetch['cli_id'],
             'cli_name'  => $fetch['cli_name'] ,  
             'cli_cpf'  => $fetch['cli_cpf'] ,  
-            'cli_address'  => $fetch['cli_address']
+            'cli_address'  => $fetch['cli_address'],
+            'cli_email'  => $fetch['cli_email'],
+            'cli_picture'  => $fetch['cli_picture'],
+            'cli_slug'  => $fetch['cli_slug'],
+            'cli_description'  => $fetch['cli_description']
+
+
 
         );
         $i++;
