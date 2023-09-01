@@ -6,6 +6,7 @@ Class Config{
 	const SITE_URL = "http://localhost";
 	const SITE_FOLDER = "testesitemvc";
 	const SITE_NAME = "Test MVC";
+	const DB_LIMIT_PAGE = 6;
 	const SITE_EMAIL_ADM = "admin@gmail.com";
 
 
@@ -14,7 +15,7 @@ Class Config{
 		  DB_USER = "root",
 		  DB_PASSWORD = "",
 		  DB_NAME = "mvctest",
-		  DB_PREFIX = "";
+		  DB_PREFIX = "mvc_";
 
 
 	//PHP Mailer info
