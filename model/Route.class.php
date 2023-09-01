@@ -17,12 +17,12 @@ Class Route{
         return self::get_SiteHome() . '/' . self::$folder_view . '/theme';
     }
 
-    static function page_Clients(){
-        return self::get_SiteHome() . '/clients';
+    static function page_Products(){
+        return self::get_SiteHome() . '/products';
     }
 
-    static function page_ClientsInfo(){
-        return self::get_SiteHome() . '/clients_info';
+    static function page_ProductsInfo(){
+        return self::get_SiteHome() . '/products_info';
     }
 
     static function page_About(){
