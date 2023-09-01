@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-08-31 23:33:11
+/* Smarty version 4.2.1, created on 2023-09-01 00:52:58
   from 'C:\xampp\htdocs\testesitemvc\view\clients.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64f107173f3454_36139017',
+  'unifunc' => 'content_64f119ca1e6306_69529131',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0d4026fd87ee5ed7ec26e64e8b4521725eedda5f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\clients.tpl',
-      1 => 1693517586,
+      1 => 1693522290,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64f107173f3454_36139017 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64f119ca1e6306_69529131 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Page Content-->
+
+<?php if ($_smarty_tpl->tpl_vars['CLI_TOTAL']->value < 1) {?>
+  <h4 class="alert alert-danger">No client found! </h4>
+  
+<?php }?>
 <section class="pt-4">
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CLI']->value, 'C');

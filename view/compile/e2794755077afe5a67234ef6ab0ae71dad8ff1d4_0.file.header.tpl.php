@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-08-29 19:56:10
+/* Smarty version 4.2.1, created on 2023-09-01 23:51:44
   from 'C:\xampp\htdocs\testesitemvc\view\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64ee313aa49b95_24548228',
+  'unifunc' => 'content_64f25cf03d8c47_12858888',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e2794755077afe5a67234ef6ab0ae71dad8ff1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\header.tpl',
-      1 => 1693331745,
+      1 => 1693605092,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64ee313aa49b95_24548228 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64f25cf03d8c47_12858888 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,16 +46,41 @@ function content_64ee313aa49b95_24548228 (Smarty_Internal_Template $_smarty_tpl)
                 <a class="navbar-brand" target="_blank" href="https://getbootstrap.com/">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
 ">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGE_CLIENTS']->value;?>
-">Clients</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGE_ABOUT']->value;?>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGE_PRODUCTS']->value;?>
+">Products</a></li>
+                        
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <li><a class="dropdown-item" href="#!">Electronics</a></li>
+                        <li><a class="dropdown-item" href="#!">Hardware</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_PAGE_ABOUT']->value;?>
 ">About</a></li>
                     </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sign Up</a></li>
+                        
+                        
+                        </ul>
                 </div>
             </div>
         </nav>
-        <p><?php }
+        <p>
+
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                </div>
+            </div>
+        </header><?php }
 }

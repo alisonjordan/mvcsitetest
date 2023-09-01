@@ -6,10 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Client' => $baseDir . '/model/Client.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Config' => $baseDir . '/model/Config.class.php',
     'Database' => $baseDir . '/model/Database.class.php',
+    'Pagination' => $baseDir . '/model/Pagination.class.php',
+    'Products' => $baseDir . '/model/Products.class.php',
     'Route' => $baseDir . '/model/Route.class.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',
     'SmartyCompilerException' => $vendorDir . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
