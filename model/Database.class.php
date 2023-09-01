@@ -33,7 +33,7 @@ Class Database extends Config{
 
     }
 
-    function ExecuteSQL($query, $params = []){
+    function ExecuteSQL($query, array $params = []){
 
     $this->obj = $this->Connect()->prepare($query);
     if(count($params) > 0){
@@ -57,6 +57,48 @@ Class Database extends Config{
     function GetItems(){
 
     return $this->items;
+}
+
+
+function PaginationLinks($field, $table){
+    $page = new Pagination();
+    $page->GetPagination($field, $table);
+    $this->pagination_links = $page->link;
+
+    $this->totalpages = $page->totalpages;
+    $this->edge = $page->edge;
+    $this->start = $page->start;
+
+    $start = $page->start;
+    $edge = $page->edge;
+
+    if($this->totalpages > 0){
+        return " limit {$start}, {$edge}";
+    }else{
+        return " ";
+    }
+    
+}
+
+protected function Pagination($pages=array()){
+    $pag = '<ul class="pagination">';
+    $pag .= '<li><a href="?p=1"> << Inicio</a></li>';
+
+    foreach($pages as $p):
+        $pag .= '<li><a href="?p='.$p.'">'.$p.'</a></li>';
+        endforeach;
+
+    $pag .= '<li><a href="?p='. $this->totalpages .'"> ...'.$this->totalpages.'>></a></li>';
+
+    $pag .= '</ul>';
+
+    if($this->totalpages > 1){
+    return $pag;
+    }
+}
+
+function ShowPagination(){
+    return $this->Pagination($this->pagination_links);
 }
 
 }
