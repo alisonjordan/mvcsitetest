@@ -5,16 +5,16 @@ $smarty = new Template();
 
 $products = new Products();
 
-if(isset(Route::$page[1]) && !isset($_POST['txt_buscar'])){
-	$products->GetProductsCatID(Route::$page[1]);
-}elseif(isset($_POST['txt_buscar'])){
+if(isset(Route::$urls[1]) && !isset($_POST['txt_search'])){
+	$products->GetProductsCatID(Route::$urls[1]);
+}elseif(isset($_POST['txt_search'])){
 	
-				$name = filter_var($_POST['txt_buscar'], FILTER_SANITIZE_STRING);
-				$products->GetProductsName($nome);
+				$name = filter_var($_POST['txt_search'], FILTER_SANITIZE_STRING);
+				$products->GetProductsName($name);
 
-}elseif(isset($_POST['txt_buscar']) && isset(Route::$page[1])){
+}elseif(isset($_POST['txt_search']) && isset(Route::$urls[1])){
 	
-				$name = filter_var($_POST['txt_buscar'], FILTER_SANITIZE_STRING);
+				$name = filter_var($_POST['txt_search'], FILTER_SANITIZE_STRING);
 				$products->GetProductsName($name);
 	
 }else{
