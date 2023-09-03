@@ -4,6 +4,7 @@ Class Route{
     public static $urls;
     private static $folder_controller = 'controller';
     private static $folder_view = 'view';
+    private static $folder_ADMIN = 'admin';
 
     static function get_SiteHome(){
         return Config::SITE_URL . '/' . Config::SITE_FOLDER;
@@ -17,6 +18,10 @@ Class Route{
         return self::get_SiteHome() . '/' . self::$folder_view . '/theme';
     }
 
+    static function page_CartUpdate(){
+		return  self::get_SiteHome(). '/cart_update';
+	}
+
     static function page_Products(){
         return self::get_SiteHome() . '/products';
     }
@@ -29,6 +34,17 @@ Class Route{
         return self::get_SiteHome() . '/about';
     }
 
+    static function get_SiteADMIN(){
+		return self::get_SiteHome() .'/' .self::$folder_ADMIN;
+
+	}
+
+
+    static function page_ProductsADMIN(){
+		return self::get_SiteADMIN() .'/adm_produtos';
+
+	}
+
     
 
     static function get_ImageFolder(){
@@ -40,8 +56,8 @@ Class Route{
 
 	}
 
-    static function ImageLink($img){
-		$image = self::get_ImageURL() . $img;
+    static function ImageLink($img, $width, $height){
+		$image = self::get_ImageURL() . $img . '" width="'.$width.'"'.' height="'.$height.'"';
 
 		return $image;
 
