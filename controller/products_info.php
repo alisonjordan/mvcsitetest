@@ -3,11 +3,16 @@
 
 $smarty = new Template();
 
+
 $products = new Products();
-$products->GetProductsID(Route::$page[1]);
+$products->GetProductsID(Route::$urls[1]);
 
 $image = new ProductsImages();
-$image->GetImagesPRO(Route::$page[1]);
+$image->GetImagesPRO(Route::$urls[1]);
+
+
+
+
 
 $smarty->assign('PRO', $products->GetItems());
 $smarty->assign('THEME', Route::get_SiteTheme());
