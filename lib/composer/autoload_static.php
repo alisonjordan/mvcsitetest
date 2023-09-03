@@ -21,11 +21,13 @@ class ComposerStaticInitc98e67de2f485a14aff4509395f5a465
     );
 
     public static $classMap = array (
+        'Categories' => __DIR__ . '/../..' . '/model/Categories.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'Database' => __DIR__ . '/../..' . '/model/Database.class.php',
         'Pagination' => __DIR__ . '/../..' . '/model/Pagination.class.php',
         'Products' => __DIR__ . '/../..' . '/model/Products.class.php',
+        'ProductsImages' => __DIR__ . '/../..' . '/model/ProductsImages.class.php',
         'Route' => __DIR__ . '/../..' . '/model/Route.class.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
@@ -194,6 +196,7 @@ class ComposerStaticInitc98e67de2f485a14aff4509395f5a465
         'Smarty_Template_Source' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_template_source.php',
         'Smarty_Undefined_Variable' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_undefined_variable.php',
         'Smarty_Variable' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
+        'System' => __DIR__ . '/../..' . '/model/System.class.php',
         'TPC_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
         'TP_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
         'Template' => __DIR__ . '/../..' . '/model/Template.class.php',

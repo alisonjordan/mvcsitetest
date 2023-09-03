@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-01 23:51:44
+/* Smarty version 4.2.1, created on 2023-09-02 19:18:21
   from 'C:\xampp\htdocs\testesitemvc\view\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64f25cf03d8c47_12858888',
+  'unifunc' => 'content_64f36e5ddf8680_68683892',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e2794755077afe5a67234ef6ab0ae71dad8ff1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\header.tpl',
-      1 => 1693605092,
+      1 => 1693670381,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64f25cf03d8c47_12858888 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64f36e5ddf8680_68683892 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -53,11 +53,20 @@ function content_64f25cf03d8c47_12858888 (Smarty_Internal_Template $_smarty_tpl)
 ">Products</a></li>
                         
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        
-                        <li><a class="dropdown-item" href="#!">Electronics</a></li>
-                        <li><a class="dropdown-item" href="#!">Hardware</a></li>
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIES']->value, 'C');
+$_smarty_tpl->tpl_vars['C']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
+$_smarty_tpl->tpl_vars['C']->do_else = false;
+?>                         
+                        <li><a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['C']->value['cat_link'];?>
+"><?php echo $_smarty_tpl->tpl_vars['C']->value['cat_name'];?>
+</a></li>
+                    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     </ul>
                 </li>
 
@@ -79,7 +88,7 @@ function content_64f25cf03d8c47_12858888 (Smarty_Internal_Template $_smarty_tpl)
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Shop in style</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop homepage template</p>
                 </div>
             </div>
         </header><?php }
