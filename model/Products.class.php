@@ -13,7 +13,7 @@ Class Products extends Database{
 
 
 	function GetProducts(){
-		//query para buscar os produtos de uma categoria especifica.
+		
 		$query = "SELECT * FROM {$this->prefix}products p INNER JOIN {$this->prefix}categories c ON p.pro_category = c.cat_id";
 
 	
@@ -31,7 +31,7 @@ Class Products extends Database{
 
 
 	function GetProductsID($id){
-		//query para buscar os produtos de uma categoria especifica.
+		
 		$query = "SELECT * FROM {$this->prefix}products p INNER JOIN {$this->prefix}categories c ON p.pro_category = c.cat_id";
 
 		$query .= " AND pro_id = :id";
@@ -103,13 +103,13 @@ Class Products extends Database{
 			 'pro_name'  => $list['pro_name'] ,  
 	         'pro_description'  => $list['pro_description'] ,  
 	         'pro_weight'  => $list['pro_weight'] ,  
-	         'pro_price'   => Sistema::MoedaBR($list['pro_price'])  ,  
+	         'pro_price'   => System::CurrencyBR($list['pro_price'])  ,  
 	         'pro_price_us'   => $list['pro_price']  ,  
 	         'pro_height' => $list['pro_height'] ,  
 	         'pro_width' => $list['pro_width'] ,  
 	         'pro_size' => $list['pro_size'] ,  
-	         'pro_image'     => Route::ImageLink($list['pro_image'], 180, 180) ,  
-	         'pro_image_l'     => Route::ImageLink($list['pro_image'], 300, 300) , 
+	         'pro_image'     => Route::ImageLink($list['pro_image'], 200, 200) ,  
+	         'pro_image_l'     => Route::ImageLink($list['pro_image'], 400, 400) , 
 	         'pro_image_s'     => Route::ImageLink($list['pro_image'], 70, 70) , 
 	         'pro_slug' => $list['pro_slug'], 
 	         'pro_reference' => $list['pro_reference'], 
@@ -118,7 +118,7 @@ Class Products extends Database{
              'pro_model'   => $list['pro_model'] ,  
              'pro_stock'   => $list['pro_stock'] ,  
              'pro_active'   => $list['pro_active'] , 
-             'pro_image_file'   => Route::get_SiteRoot() .'/'. Route::get_ImageFolder().$list['pro_img'], 
+             'pro_image_file'   => Route::get_SiteRoot() .'/'. Route::get_ImageFolder().$list['pro_image'], 
              'pro_image_current'     => $list['pro_image'] ,   
  
 			);
@@ -355,12 +355,12 @@ Class Products extends Database{
     function setPro_price($pro_price) {
         //1.335,99 => 1.33599
         
-        // procura a virgula e troca por ponto
+        
       $pro_price = str_replace('.', '', $pro_price); 
       $pro_price = str_replace(',', '.', $pro_price); 
        
         $this->pro_price = $pro_price ;
-       // echo $this->pro_valor;
+       
         
     }
     
@@ -399,7 +399,7 @@ Class Products extends Database{
     function setPro_slug($pro_slug) {
        
         
-        $this->pro_slug = Sistema::GetSlug($pro_slug);
+        $this->pro_slug = System::GetSlug($pro_slug);
     }
 
 
