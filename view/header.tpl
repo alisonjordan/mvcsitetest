@@ -25,11 +25,11 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_PAGE_PRODUCTS}">Products</a></li>
                         
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        
-                        <li><a class="dropdown-item" href="#!">Electronics</a></li>
-                        <li><a class="dropdown-item" href="#!">Hardware</a></li>
+                    {foreach from=$CATEGORIES item=C}                         
+                        <li><a class="dropdown-item" href="{$C.cat_link}">{$C.cat_name}</a></li>
+                    {/foreach}
                     </ul>
                 </li>
 
@@ -50,7 +50,7 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Shop in style</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop homepage template</p>
                 </div>
             </div>
         </header>
