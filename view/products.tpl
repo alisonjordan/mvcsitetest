@@ -2,8 +2,8 @@
    <section class="py-5">
 
    {if $PRO_TOTAL < 1}
-    <H4 class="alert alert-danger">No item found!!</H4>
-    <meta http-equiv="refresh" content=1;url="{$PRODUCTS}">
+    <h4 class="alert alert-danger">No product found!!</h4>
+    <meta http-equiv="refresh" content=5;url="{$PRODUCTS}">
     
     {/if}
 
@@ -49,4 +49,9 @@
         {/foreach}
        </div>
    </div>
-</section>
+
+   <nav aria-label="Page navigation example">
+   {$PAGES}
+ </nav>
+ 
+   </section>
