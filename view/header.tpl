@@ -36,6 +36,10 @@
                 <li class="nav-item"><a class="nav-link" href="{$GET_PAGE_ABOUT}">About</a></li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                    
+
+                    
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sign Up</a></li>
                         
@@ -51,6 +55,26 @@
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Shop in style</h1>
                     <p class="lead fw-normal text-white-50 mb-0">With this shop homepage template</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Looking for something special?</p>
+                    <p>
+ 
+                    
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+    <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+  </form>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+                    
+                    
                 </div>
             </div>
         </header>
