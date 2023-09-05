@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-03 02:16:55
+/* Smarty version 4.2.1, created on 2023-09-05 22:57:11
   from 'C:\xampp\htdocs\testesitemvc\view\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64f3d077508485_49007289',
+  'unifunc' => 'content_64f79627a827c8_35334619',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e2794755077afe5a67234ef6ab0ae71dad8ff1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\header.tpl',
-      1 => 1693670381,
+      1 => 1693947428,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64f3d077508485_49007289 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64f79627a827c8_35334619 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -74,6 +74,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 ">About</a></li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    
+                    
+
+                    
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sign Up</a></li>
                         
@@ -89,6 +93,26 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Shop in style</h1>
                     <p class="lead fw-normal text-white-50 mb-0">With this shop homepage template</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Looking for something special?</p>
+                    <p>
+ 
+                    
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+    <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+  </form>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+                    
+                    
                 </div>
             </div>
         </header><?php }
