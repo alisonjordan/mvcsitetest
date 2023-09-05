@@ -81,14 +81,14 @@ function PaginationLinks($field, $table){
 }
 
 protected function Pagination($pages=array()){
-    $pag = '<ul class="pagination">';
-    $pag .= '<li><a href="?p=1"> << Inicio</a></li>';
+    $pag = '<ul class="pagination justify-content-center">';
+    $pag .= '<li class="page-item"><a class="page-link" href="?p=1"> First </a></li>';
 
     foreach($pages as $p):
-        $pag .= '<li><a href="?p='.$p.'">'.$p.'</a></li>';
+        $pag .= '<li class="page-item"><a class="page-link" href="?p='.$p.'">'.$p.'</a></li>';
         endforeach;
 
-    $pag .= '<li><a href="?p='. $this->totalpages .'"> ...'.$this->totalpages.'>></a></li>';
+    $pag .= '<li class="page-item" ><a class="page-link" href="?p='. $this->totalpages .'"> Last </a></li>';
 
     $pag .= '</ul>';
 
