@@ -18,7 +18,8 @@ Class ProductsImages extends Database{
 		while($list = $this->DataFetch()):
 		$this->items[$i] = array(
 			 'img_id' => $list['img_id'],
-			  'img_name' => Route::ImageLink($list['img_name'], 150, 150) ,   
+			 'img_name' => Route::ImageLink($list['img_name'], 150, 150) ,
+			 'img_name_l' => Route::ImageLink($list['img_name'], 400, 400) ,   
 	         'img_pro_id'  => $list['img_pro_id'] ,  
 	         'img_link' => Route::ImageLink($list['img_name'], 500, 500) ,
 	         'img_file' => $list['img_name'],
