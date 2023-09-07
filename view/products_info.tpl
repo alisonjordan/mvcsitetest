@@ -4,26 +4,29 @@
 
 <div class="container px-4 px-lg-5 my-5">
     <div class="row gx-4 gx-lg-5 align-items-center">
-
+   
     <!-- Carousel start -->
         <div class="col-md-6">
         <div id="demo" class="carousel slide">
         <div class="carousel-inner">
 
-        
+
         <div class="carousel-item active">
         
-        <div class="xzoom-container"> <img class="xzoom card-img-top mb-5 mb-md-0 rounded" id="xzoom-default" src="{$PRO[1].pro_image_l}" xoriginal="{$PRO[1].pro_image_l}" /> </div>
+        <div class="easyzoom easyzoom--overlay"> <a href="{$PRO[1].pro_image_l}"> <img class="card-img-top mb-5 mb-md-0 rounded" src="{$PRO[1].pro_image_l}"/> </a> </div>
         
         </div>
+
         {foreach from=$IMAGES item=I}
         <div class="carousel-item">
-        <img class="card-img-top mb-5 mb-md-0 rounded" src="{$I.img_name_l}" alt="..." />
+        <div class="easyzoom easyzoom--overlay"> <a href="{$I.img_name_l}"> <img class="card-img-top mb-5 mb-md-0 rounded" src="{$I.img_name_l}"/> </a> </div>
         </div>
       {/foreach}
 
+      </div>
 
-        </div>
+      
+
 <!-- Left and right controls/icons -->
 <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
 <span class="carousel-control-prev-icon rounded-circle bg-dark"></span>
@@ -32,7 +35,32 @@
 <span class="carousel-control-next-icon rounded-circle bg-dark"></span>
 </button>
 
+
+
         </div>
+
+<!-- Thumbs start -->
+
+        <div class="container">
+         
+    
+        <div class="col-sm">
+        
+        <div class="text-center">
+        {foreach from=$IMAGES item=I}
+                    <!-- Product image-->
+                    <img class="img-thumbnail rounded" src="{$I.img_name}" alt="..." />
+    
+                {/foreach}
+                  </div>
+                
+                </div>
+            </div>
+
+
+<!-- Thumbs end -->
+
+
         </div>
 
 <!-- Carousel end -->
@@ -64,30 +92,13 @@
         </div>
     </div>
 </div>
-
-
-<div class="container px-4 px-lg-5 mt-5">
-         
-    
-    <div class="col mb-5">
-    
-    <div class="text-center">
-    {foreach from=$IMAGES item=I}
-                <!-- Product image-->
-                <img class="img-thumbnail rounded" src="{$I.img_name}" alt="..." />
-
-            {/foreach}
-              </div>
-            
-            </div>
-        </div>
         
    
         
     </div>
 </div>
 
-</section>
+</section>    
 
 
                 
