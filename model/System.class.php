@@ -16,7 +16,7 @@ Class System {
      */
     static function CurrentDateUS(){
         
-        return date('Y-m-d') ;
+        return date('m/d/Y') ;
     }
     /**
      * 
