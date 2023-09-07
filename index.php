@@ -15,7 +15,7 @@ $smarty->assign('GET_HOME',Route::get_SiteHome());
 $smarty->assign('CATEGORIES', $categories->GetItems());
 $smarty->assign('GET_PAGE_PRODUCTS',Route::page_Products());
 $smarty->assign('GET_PAGE_ABOUT',Route::page_About());
-$smarty->assign('DATA', System::CurrentDateUS());
+$smarty->assign('DATE', System::CurrentDateUS());
 
 $data = new Database();
 $smarty->display('index.tpl');
