@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-04 20:40:57
+/* Smarty version 4.2.1, created on 2023-09-07 21:12:49
   from 'C:\xampp\htdocs\testesitemvc\view\products_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64f624b9f0a3d3_51827167',
+  'unifunc' => 'content_64fa20b1341048_91404496',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f5790e0ab1e9eb2496669334df578500a2a5d38' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\products_info.tpl',
-      1 => 1693697684,
+      1 => 1694113963,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,57 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64f624b9f0a3d3_51827167 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64fa20b1341048_91404496 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Product section-->
 <section class="py-5">
 
 
 <div class="container px-4 px-lg-5 my-5">
     <div class="row gx-4 gx-lg-5 align-items-center">
-        <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_image_l'];?>
-" alt="..." /></div>
+
+    <!-- Carousel start -->
+        <div class="col-md-6">
+        <div id="demo" class="carousel slide">
+        <div class="carousel-inner">
+
+        
+        <div class="carousel-item active">
+        
+        <div class="xzoom-container"> <img class="xzoom card-img-top mb-5 mb-md-0 rounded" id="xzoom-default" src="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_image_l'];?>
+" xoriginal="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_image_l'];?>
+" /> </div>
+        
+        </div>
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['IMAGES']->value, 'I');
+$_smarty_tpl->tpl_vars['I']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['I']->value) {
+$_smarty_tpl->tpl_vars['I']->do_else = false;
+?>
+        <div class="carousel-item">
+        <img class="card-img-top mb-5 mb-md-0 rounded" src="<?php echo $_smarty_tpl->tpl_vars['I']->value['img_name_l'];?>
+" alt="..." />
+        </div>
+      <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
+
+        </div>
+<!-- Left and right controls/icons -->
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+<span class="carousel-control-prev-icon rounded-circle bg-dark"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+<span class="carousel-control-next-icon rounded-circle bg-dark"></span>
+</button>
+
+        </div>
+        </div>
+
+<!-- Carousel end -->
+
+
         <div class="col-md-6">
             <div class="small mb-1">SKU: <?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_reference'];?>
 </div>
@@ -41,64 +83,58 @@ function content_64f624b9f0a3d3_51827167 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <p class="lead"><?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_description'];?>
 </p>
-            <div class="d-flex">
-                <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+            <div class="d-grid gap-2 col-6 mx-auto">
+            
+           <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
+                
                 <button class="btn btn-outline-dark flex-shrink-0" type="button">
                     <i class="bi-cart-fill me-1"></i>
                     Add to cart
                 </button>
+                
+                <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                
+               Buy now
+            </button>
             </div>
+            
         </div>
     </div>
 </div>
-
-
-
-</section>
-<!-- Related items section-->
-<section class="py-5 bg-light">
 
 
 <div class="container px-4 px-lg-5 mt-5">
-    <h2 class="fw-bolder mb-4">Related products</h2>
+         
     
-    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-        
-    <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
-$_smarty_tpl->tpl_vars['P']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
-$_smarty_tpl->tpl_vars['P']->do_else = false;
-?>
     <div class="col mb-5">
-            <div class="card h-100">
+    
+    <div class="text-center">
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['IMAGES']->value, 'I');
+$_smarty_tpl->tpl_vars['I']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['I']->value) {
+$_smarty_tpl->tpl_vars['I']->do_else = false;
+?>
                 <!-- Product image-->
-                <img class="card-img-top" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_image'];?>
+                <img class="img-thumbnail rounded" src="<?php echo $_smarty_tpl->tpl_vars['I']->value['img_name'];?>
 " alt="..." />
-                <!-- Product details-->
-                <div class="card-body p-4">
-                    <div class="text-center">
-                        <!-- Product name-->
-                        <h5 class="fw-bolder"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_name'];?>
-</h5>
-                        <!-- Product price-->
-                        $<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_price'];?>
 
-                    </div>
-                </div>
-                <!-- Product actions-->
-                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                </div>
+            <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+              </div>
+            
             </div>
         </div>
         
-    <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+   
         
     </div>
 </div>
 
-</section><?php }
+</section>
+
+
+                
+       <?php }
 }
