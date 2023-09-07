@@ -11,7 +11,12 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <script src="{$GET_THEME}/js/jquery-3.7.1.min.js"></script>
+        
         <link href="{$GET_THEME}/css/styles.css" rel="stylesheet" />
+        <script src="{$GET_THEME}/js/xzoom.min.js"></script>
+        <link href="{$GET_THEME}/css/xzoom.css" rel="stylesheet" />
+        
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -77,4 +82,4 @@
                     
                 </div>
             </div>
-        </header>
+</header>
