@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-07 20:51:06
+/* Smarty version 4.2.1, created on 2023-09-08 00:20:18
   from 'C:\xampp\htdocs\testesitemvc\view\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64fa1b9a77e136_73768073',
+  'unifunc' => 'content_64fa4ca2a2b9b9_87000935',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e2794755077afe5a67234ef6ab0ae71dad8ff1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\header.tpl',
-      1 => 1694112657,
+      1 => 1694125091,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64fa1b9a77e136_73768073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64fa4ca2a2b9b9_87000935 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -37,18 +37,20 @@ function content_64fa1b9a77e136_73768073 (Smarty_Internal_Template $_smarty_tpl)
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
 /js/jquery-3.7.1.min.js"><?php echo '</script'; ?>
 >
-        
+
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
 /css/styles.css" rel="stylesheet" />
-        <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
-/js/xzoom.min.js"><?php echo '</script'; ?>
->
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
-/css/xzoom.css" rel="stylesheet" />
+/css/bootstrap.min.css" rel="stylesheet" />
+        <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
+/js/easyzoom.js"><?php echo '</script'; ?>
+>
+        <link type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['GET_THEME']->value;?>
+/css/easyzoom.css" media="all" rel="stylesheet" />
         
     </head>
     <body>
@@ -127,5 +129,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     
                 </div>
             </div>
-</header><?php }
+</header>
+<?php }
 }
