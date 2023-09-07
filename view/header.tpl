@@ -10,12 +10,17 @@
         <link rel="icon" type="image/x-icon" href="{$GET_THEME}/assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <script src="{$GET_THEME}/js/jquery-3.7.1.min.js"></script>
         
+        <!-- Jquery-->
+        <script type="text/javascript" src="{$GET_THEME}/js/jquery-3.7.1.min.js"></script>
+
+        <!-- Style and Bootstrap-->
         <link href="{$GET_THEME}/css/styles.css" rel="stylesheet" />
-        <script src="{$GET_THEME}/js/xzoom.min.js"></script>
-        <link href="{$GET_THEME}/css/xzoom.css" rel="stylesheet" />
+        <link href="{$GET_THEME}/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Easy Zoom -->
+        <script type="text/javascript" src="{$GET_THEME}/js/easyzoom.js"></script>
+        <link type="text/css" href="{$GET_THEME}/css/easyzoom.css" media="all" rel="stylesheet" />
         
     </head>
     <body>
@@ -80,6 +85,6 @@
 </div>
                     
                     
-                </div>
-            </div>
+</div>
+</div>
 </header>
