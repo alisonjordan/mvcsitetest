@@ -76,17 +76,38 @@
             <p class="lead">{$PRO[1].pro_description}</p>
             <div class="d-grid gap-2 col-6 mx-auto">
             
-           <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
+           
                 
-                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                    <i class="bi-cart-fill me-1"></i>
-                    Add to cart
-                </button>
-                
-                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                
-               Buy now
-            </button>
+
+                <form name="cart" method="post" action="{$PAGE_BUY}">
+                <input name="pro_qtt" class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
+                <p>        
+                <input type="hidden" name="pro_id" value="{$PRO[1].pro_id}">
+                        <input type="hidden" name="action" value="add">
+
+       
+        
+                        <div class="container-sm">
+                        <div class="row">
+                        <button class="btn btn-outline-dark flex-shrink-0">
+                        <i class="fa-solid fa-cart-plus fa-beat"></i>
+                            Add to cart
+                        </button>
+                        </div>
+                        </div>
+                </form> 
+
+                <form name="cart" method="post" action="{$PAGE_BUY}">
+                        <input type="hidden" name="pro_id" value="{$PRO[1].pro_id}">
+                        <input type="hidden" name="action" value="add">
+                        <div class="container-sm">
+                        <div class="row">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <i class="fa-solid fa-money-bill"></i> Buy now
+                        </button>
+                        </div>
+                        </div>
+                </form> 
             </div>
             
         </div>

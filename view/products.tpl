@@ -1,11 +1,13 @@
-   <!-- Section-->
-   <section class="py-5">
-
-   {if $PRO_TOTAL < 1}
-    <h4 class="alert alert-danger">No product found!!</h4>
+{if $PRO_TOTAL < 1}
+    <p><div class="container"> <h4 class="alert alert-danger">No product found!!</h4> </div>
     <meta http-equiv="refresh" content=5;url="{$PRODUCTS}">
     
     {/if}
+
+<!-- Section-->
+   <section class="py-5">
+
+   
 
 
    <div class="container px-4 px-lg-5 mt-5">
