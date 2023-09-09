@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-08 01:35:06
+/* Smarty version 4.2.1, created on 2023-09-09 01:41:36
   from 'C:\xampp\htdocs\testesitemvc\view\products_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64fa5e2ab21756_54884221',
+  'unifunc' => 'content_64fbf7807974d2_23851776',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f5790e0ab1e9eb2496669334df578500a2a5d38' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\products_info.tpl',
-      1 => 1694129703,
+      1 => 1694234486,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64fa5e2ab21756_54884221 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64fbf7807974d2_23851776 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Product section-->
 <section class="py-5">
 
@@ -73,7 +73,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
         </div>
 
-
+<!-- Thumbs start -->
 
         <div class="container">
          
@@ -100,7 +100,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </div>
 
 
-
+<!-- Thumbs end -->
 
 
         </div>
@@ -122,17 +122,42 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </p>
             <div class="d-grid gap-2 col-6 mx-auto">
             
-           <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
+           
                 
-                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                    <i class="bi-cart-fill me-1"></i>
-                    Add to cart
-                </button>
-                
-                <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                
-               Buy now
-            </button>
+
+                <form name="cart" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGE_BUY']->value;?>
+">
+                <input name="pro_qtt" class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
+                <p>        
+                <input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_id'];?>
+">
+                        <input type="hidden" name="action" value="add">
+
+       
+        
+                        <div class="container-sm">
+                        <div class="row">
+                        <button class="btn btn-outline-dark flex-shrink-0">
+                        <i class="fa-solid fa-cart-plus fa-beat"></i>
+                            Add to cart
+                        </button>
+                        </div>
+                        </div>
+                </form> 
+
+                <form name="cart" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGE_BUY']->value;?>
+">
+                        <input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_id'];?>
+">
+                        <input type="hidden" name="action" value="add">
+                        <div class="container-sm">
+                        <div class="row">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <i class="fa-solid fa-money-bill"></i> Buy now
+                        </button>
+                        </div>
+                        </div>
+                </form> 
             </div>
             
         </div>
