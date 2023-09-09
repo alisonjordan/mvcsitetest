@@ -18,6 +18,10 @@ Class Route{
         return self::get_SiteHome() . '/' . self::$folder_view . '/theme';
     }
 
+    static function page_Cart(){
+		return  self::get_SiteHOME(). '/cart';
+	}
+
     static function page_CartUpdate(){
 		return  self::get_SiteHome(). '/cart_update';
 	}
