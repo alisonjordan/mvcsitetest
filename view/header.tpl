@@ -14,6 +14,10 @@
         <!-- Jquery-->
         <script type="text/javascript" src="{$GET_THEME}/js/jquery-3.7.1.min.js"></script>
 
+        <!-- Font Awesome-->
+        <link href="{$GET_THEME}/fonts/fontawesome/css/all.css" rel="stylesheet">
+        <script type="text/javascript" src="{$GET_THEME}/fonts/fontawesome/js/all.js"></script>
+
         <!-- Style and Bootstrap-->
         <link href="{$GET_THEME}/css/styles.css" rel="stylesheet" />
         <link href="{$GET_THEME}/css/bootstrap.min.css" rel="stylesheet"/>
@@ -21,7 +25,7 @@
         <!-- Easy Zoom -->
         <script type="text/javascript" src="{$GET_THEME}/js/easyzoom.js"></script>
         <link type="text/css" href="{$GET_THEME}/css/easyzoom.css" media="all" rel="stylesheet" />
-        
+
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -31,11 +35,11 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_HOME}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_PAGE_PRODUCTS}">Products</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_HOME}"> <i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_PAGE_PRODUCTS}"> <i class="fa-solid fa-tags"></i> Products</a></li>
                         
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-bars-staggered"></i> Categories</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     {foreach from=$CATEGORIES item=C}                         
                         <li><a class="dropdown-item" href="{$C.cat_link}">{$C.cat_name}</a></li>
@@ -43,15 +47,17 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="{$GET_PAGE_ABOUT}">About</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="{$GET_PAGE_CART}"> <i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="{$GET_PAGE_ABOUT}"> <i class="fa-solid fa-circle-info"></i> About</a></li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     
                     
 
                     
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
                         
                         
                         </ul>
