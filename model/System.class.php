@@ -83,12 +83,12 @@ Class System {
         
         
     /**
-     * validar CPF
+     * 
      * @param type string: CPF 
-     * @return boolean: true caso o CPF seja correto
+     * @return boolean: 
      */    
     static function ValidateCPF($cpf = false) {    
-      // determina um valor inicial para o digito $d1 e $d2
+      
 	$d1 = 0;
 	$d2 = 0;
             
