@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-08 14:36:21
+/* Smarty version 4.2.1, created on 2023-09-09 15:41:04
   from 'C:\xampp\htdocs\testesitemvc\view\products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64fb5b957d5863_59442489',
+  'unifunc' => 'content_64fcbc40b93d44_51145027',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a0c3fc45a3c66fb85e8c4db911c8c563eabff94e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\products.tpl',
-      1 => 1694194572,
+      1 => 1694284249,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64fb5b957d5863_59442489 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64fcbc40b93d44_51145027 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['PRO_TOTAL']->value < 1) {?>
     <p><div class="container"> <h4 class="alert alert-danger">No product found!!</h4> </div>
     <meta http-equiv="refresh" content=5;url="<?php echo $_smarty_tpl->tpl_vars['PRODUCTS']->value;?>
@@ -58,14 +58,14 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                            <!-- Product name-->
                            <h5 class="fw-bolder"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_name'];?>
 </h5>
-                           <!-- Product reviews-->
+                           <!-- Product reviews
                            <div class="d-flex justify-content-center small text-warning mb-2">
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
-                           </div>
+                           </div> -->
                            <!-- Product price-->
                            
                          $<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_price'];?>

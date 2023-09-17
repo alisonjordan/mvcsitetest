@@ -27,14 +27,14 @@
                        <div class="text-center">
                            <!-- Product name-->
                            <h5 class="fw-bolder">{$P.pro_name}</h5>
-                           <!-- Product reviews-->
+                           <!-- Product reviews
                            <div class="d-flex justify-content-center small text-warning mb-2">
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
                                <div class="bi-star-fill"></div>
-                           </div>
+                           </div> -->
                            <!-- Product price-->
                            
                          ${$P.pro_price}

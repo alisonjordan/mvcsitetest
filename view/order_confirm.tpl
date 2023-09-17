@@ -44,21 +44,6 @@
 
                 
 
-                      
-              <form name="clean" method="post" action="{$PAGE_CART_UPDATE}">
-              <input type="hidden" name="action" value="clean">
-              <input type="hidden" name="pro_id" value="1">
-              
-              <div class="container-sm">
-              <div class="row">
-              <button class="btn btn-danger btn-block"> <i class="fa-solid fa-trash-can"></i> Clean cart</button>
-              </div>
-              </div>
-              
-            
-
-              </form>
-
               
 
               
@@ -67,50 +52,23 @@
 
 
 
-              <div class="col-lg-6 px-5 py-4">
-
-
-              <section class="row" id="datafreight">
-                <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Freight</h3>
-
-                
-
-                <input type="hidden" name="weight_freight" id="weight_freight" value="{$WEIGHT}" class="form-control " readonly>
-                   
-                
-               
-                
-                <input type="hidden" name="freight_price" id="freight_price" value="0">
-
-                  <div class="row">
-                    <div class="col-md-6 mb-5">
-                      <div class="form-outline">
-                        <input type="text"  class="form-control form-control-lg"
-                            name="cep_freight" id="cep_freight" placeholder="Type your cep"/>
-                        <label class="form-label" for="typeExp">CEP</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                      <div class="form-outline">
-                      <button type="button" class="btn btn-secondary btn-lg" id="search_frete"> <i class="fa-solid fa-magnifying-glass"></i> Verify</button>
-                      </div>
-                    </div>
-                  </div>
-                  </section>
-
-                  <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+              
 
                   <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #98d6f3;">
                     <h5 class="fw-bold mb-0">Total:</h5>
                     <h5 class="fw-bold mb-0">${$TOTAL}</h5>
+                    <h5 class="fw-bold mb-0">Freight:</h5>
+                    <h5 class="fw-bold mb-0">${$FREIGHT}</h5>
+                    <h5 class="fw-bold mb-0">Total with Freight:</h5>
+                    <h5 class="fw-bold mb-0">${$TOTAL_FREIGHT}</h5>
                   </div>
 
-                        <form name="order_confirm" id="order_confirm" method="post" action="{$PAGE_CONFIRM}">
+                  <form name="order_finish" id="order_finish" method="post" action="{$PAGE_FINISH}">
 
-                        <span id="freight"></span>
+                        
                         <div class="container-sm">
                         <div class="row">
-                        <button class="btn btn-success btn-block" type="submit">  <i class="fa-solid fa-circle-check"></i> Confirm Order </button>
+                        <button class="btn btn-success btn-block" type="submit">  <i class="fa-solid fa-circle-check"></i> Finish Order </button>
                         </div>
                         </div>
                         </form>
@@ -119,7 +77,7 @@
                         <div class="container-sm">
                         <div class="row">
                         <h5 class="fw-bold mb-5">
-                                  <a href="{$PAGE_PRODUCTS}"><i class="fas fa-angle-left me-2"></i>Back to shopping</a>
+                                  <a href="{$GET_PAGE_CART}"><i class="fas fa-angle-left me-2"></i>Back to cart</a>
                                 </h5>
                         </div>
                         </div>

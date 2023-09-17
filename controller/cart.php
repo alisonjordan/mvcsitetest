@@ -14,7 +14,7 @@ if(isset($_SESSION['PRO'])) {
 	$smarty->assign('TOTAL', $cart->GetTotal());
 	$smarty->assign('PAGE_PRODUCTS', Route::page_Products());
 	$smarty->assign('PAGE_CART_UPDATE', Route::page_CartUpdate());
-	//$smarty->assign('PAGE_CONFIRM', Route::page_OrderConfirm());
+	$smarty->assign('PAGE_CONFIRM', Route::page_OrderConfirm());
 	$smarty->assign('WEIGHT', number_format($cart->GetWeight(),3,'.',''));
 
 

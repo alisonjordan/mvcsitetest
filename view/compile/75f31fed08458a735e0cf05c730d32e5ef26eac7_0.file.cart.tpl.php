@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-09 02:02:00
+/* Smarty version 4.2.1, created on 2023-09-09 20:12:13
   from 'C:\xampp\htdocs\testesitemvc\view\cart.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64fbfc48920891_74650617',
+  'unifunc' => 'content_64fcfbcd392ba4_73730796',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '75f31fed08458a735e0cf05c730d32e5ef26eac7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\cart.tpl',
-      1 => 1694235717,
+      1 => 1694301129,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64fbfc48920891_74650617 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64fcfbcd392ba4_73730796 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="h-100 h-custom" style="background-color: #eee;">
   <div class="container h-100 py-5">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -68,7 +68,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
  X $<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_price_us'];?>
  </h6>
                     <div class="d-flex align-items-center">
-                      <p class="fw-bold mb-0 me-5 pe-3">Subtotal: $<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_price_us'];?>
+                      <p class="fw-bold mb-0 me-5 pe-3">Subtotal: $<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_subTotal_us'];?>
 </p>
                     </div>
                
@@ -108,6 +108,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
               <div class="col-lg-6 px-5 py-4">
 
+
+              <section class="row" id="datafreight">
                 <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Freight</h3>
 
                 
@@ -134,7 +136,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                       </div>
                     </div>
                   </div>
-
+                  </section>
 
                   <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
 
@@ -144,7 +146,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </h5>
                   </div>
 
-                        <form name="order_confirm" id="order_confirm" method="post" action="#">
+                        <form name="order_confirm" id="order_confirm" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAGE_CONFIRM']->value;?>
+">
 
                         <span id="freight"></span>
                         <div class="container-sm">

@@ -18,12 +18,20 @@ Class Route{
         return self::get_SiteHome() . '/' . self::$folder_view . '/theme';
     }
 
+    static function get_Folder_Controller(){
+		return self::$folder_controller;
+	}
+
     static function page_Cart(){
 		return  self::get_SiteHOME(). '/cart';
 	}
 
     static function page_CartUpdate(){
 		return  self::get_SiteHome(). '/cart_update';
+	}
+
+    static function page_OrderConfirm(){
+		return  self::get_SiteHOME(). '/order_confirm';
 	}
 
     static function page_Products(){

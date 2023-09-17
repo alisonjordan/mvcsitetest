@@ -17,6 +17,6 @@ try {
 }
 
 
-Route::Redirect(1, Route::page_Cart());
+Route::Redirect(5, Route::page_Cart());
 
  ?>
