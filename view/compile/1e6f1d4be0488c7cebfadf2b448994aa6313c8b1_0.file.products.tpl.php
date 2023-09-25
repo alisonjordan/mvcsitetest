@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-09-09 15:41:04
-  from 'C:\xampp\htdocs\testesitemvc\view\products.tpl' */
+/* Smarty version 4.2.1, created on 2023-09-19 18:08:23
+  from '/opt/lampp/htdocs/testesitemvc/view/products.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_64fcbc40b93d44_51145027',
+  'unifunc' => 'content_650a0dc7ae1340_48596052',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'a0c3fc45a3c66fb85e8c4db911c8c563eabff94e' => 
+    '1e6f1d4be0488c7cebfadf2b448994aa6313c8b1' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\testesitemvc\\view\\products.tpl',
+      0 => '/opt/lampp/htdocs/testesitemvc/view/products.tpl',
       1 => 1694284249,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64fcbc40b93d44_51145027 (Smarty_Internal_Template $_smarty_tpl) {
+function content_650a0dc7ae1340_48596052 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['PRO_TOTAL']->value < 1) {?>
     <p><div class="container"> <h4 class="alert alert-danger">No product found!!</h4> </div>
     <meta http-equiv="refresh" content=5;url="<?php echo $_smarty_tpl->tpl_vars['PRODUCTS']->value;?>
