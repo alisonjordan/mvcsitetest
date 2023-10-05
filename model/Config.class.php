@@ -8,6 +8,7 @@ Class Config{
 	const SITE_NAME = "Test MVC";
 	const DB_LIMIT_PAGE = 5;
 	const SITE_EMAIL_ADM = "admin@gmail.com";
+	const SITE_CEP = '68927257';
 
 
 	//Database info

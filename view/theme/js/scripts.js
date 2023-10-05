@@ -10,10 +10,10 @@ $(document).ready(function() {
 });
 
 
-
+/*
 $(document).ready(function(){    
 
-   // validar frete
+   // validate freight
      $('#search_freight').click(function(){  
         
       var CEP_CLIENT = $('#cep_freight').val();
@@ -40,4 +40,4 @@ $(document).ready(function(){
     });
     
    
-} );
+} );*/

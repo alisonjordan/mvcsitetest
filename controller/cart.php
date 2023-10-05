@@ -25,7 +25,7 @@ if(isset($_SESSION['PRO'])) {
 
 }else{
 	echo '<p><div class="container"><h4 class="alert alert-danger"> <i class="fa-solid fa-triangle-exclamation"></i> There is no product inside the cart. </h4></div>';
-	Route::Redirect(3, Route::page_Products());
+	Route::Redirect(2, Route::page_Products());
 }
 
  ?>

@@ -70,7 +70,7 @@
               <div class="col-lg-6 px-5 py-4">
 
 
-              <section class="row" id="datafreight">
+              <section class="row" id="data_freight">
                 <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Freight</h3>
 
                 
@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-6 mb-5">
                       <div class="form-outline">
-                      <button type="button" class="btn btn-secondary btn-lg" id="search_frete"> <i class="fa-solid fa-magnifying-glass"></i> Verify</button>
+                      <button type="button" class="btn btn-secondary btn-lg" id="search_freight"> <i class="fa-solid fa-magnifying-glass"></i> Verify</button>
                       </div>
                     </div>
                   </div>

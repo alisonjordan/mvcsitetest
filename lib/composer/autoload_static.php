@@ -25,6 +25,7 @@ class ComposerStaticInitc98e67de2f485a14aff4509395f5a465
         'Categories' => __DIR__ . '/../..' . '/model/Categories.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
+        'Courier' => __DIR__ . '/../..' . '/model/Courier.class.php',
         'Database' => __DIR__ . '/../..' . '/model/Database.class.php',
         'Pagination' => __DIR__ . '/../..' . '/model/Pagination.class.php',
         'Products' => __DIR__ . '/../..' . '/model/Products.class.php',

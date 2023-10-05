@@ -1,13 +1,14 @@
 <?php
+
 if(isset($_SESSION['PRO'])) {
 
-
+/*
 	if(!isset($_POST['freight_radio'])){
 		Route::Redirect(1, Route::page_Cart().'#datafreight');
 		exit ('<h4 class="alert alert-danger"> You must select the freight! </h4>');
 	}
 
-
+*/
 	$smarty = new Template();
 
 	$cart = new Cart();

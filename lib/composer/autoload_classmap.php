@@ -10,6 +10,7 @@ return array(
     'Categories' => $baseDir . '/model/Categories.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Config' => $baseDir . '/model/Config.class.php',
+    'Courier' => $baseDir . '/model/Courier.class.php',
     'Database' => $baseDir . '/model/Database.class.php',
     'Pagination' => $baseDir . '/model/Pagination.class.php',
     'Products' => $baseDir . '/model/Products.class.php',

@@ -64,7 +64,7 @@ Class Cart{
             $PRICE_US = $pro['pro_price_us'];
             $PRICE  = $pro['pro_price'];
             $WEIGHT  = $pro['pro_weight'];
-            $QTT   = 0;
+            $QTT   = 0 + $_POST['pro_qtt'];
             $IMAGE   = $pro['pro_image'];
             $LINK  = Route::page_ProductsInfo().'/'.$ID.'/'.$pro['pro_slug'];
             $ACTION  = $_POST['action'];
@@ -78,7 +78,7 @@ Class Cart{
 					    $_SESSION['PRO'][$ID]['PRICE'] = $PRICE;
 					    $_SESSION['PRO'][$ID]['PRICE_US'] = $PRICE_US;
 					    $_SESSION['PRO'][$ID]['WEIGHT']  = $WEIGHT;
-					    $_SESSION['PRO'][$ID]['QTT']   = $QTT + $_POST['pro_qtt'];
+					    $_SESSION['PRO'][$ID]['QTT']   = $QTT;
 					    $_SESSION['PRO'][$ID]['IMAGE']   = $IMAGE;
 					    $_SESSION['PRO'][$ID]['LINK']  = $LINK;  
 					}else{
